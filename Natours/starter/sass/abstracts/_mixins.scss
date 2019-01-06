@@ -5,3 +5,14 @@
     clear: both;
   }
 }
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin boxShadow ($YLen,$blur,$opacity) {
+  box-shadow: 0 $YLen $blur rgba($color-black, $opacity)
+}
